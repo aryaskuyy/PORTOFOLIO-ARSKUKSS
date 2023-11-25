@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function gantigambar(x) {
+            var gambar;
+            if (x == 1) {
+                gambar = "foto/stikom.png";
+            } else if (x == 2) {
+                gambar = "foto/download (12).jpg";
+            } else if (x == 3) {
+                gambar = "foto/Apa-Saja-Manfaat-Mengonsumsi-Buah-Manggis_-01.jpg";
+            }
+            document.getElementById("foto").src = gambar;
+        }
+    </script>
+</head>
+<body>
+    <img src="foto/stikom.png" alt="" height="150px" id="foto"> <br><br>
+    <button type="button" onclick="gantigambar(1)">Gambar 1</button>
+    <button type="button" onclick="gantigambar(2)">Gambar 2</button>
+    <button type="button" onclick="gantigambar(3)">Gambar 3</button>
+</body>
+</html>
